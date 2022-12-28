@@ -71,7 +71,7 @@ useEffect(() => {
         <ul className='flex flex-col my-4'>
           {links.map(({href, label}, index) => (
             <li key={`${href}${label}`} className='max-w-4 flex flex-col items-center justify-center'>
-              <Link href={href}>
+              <Link href={href} onClick={() => setMenu(false)}>
                 <p className='text-center text-3xl text-gray-700 hover:text-gray-1000'> 
                   {label}
                 </p>
