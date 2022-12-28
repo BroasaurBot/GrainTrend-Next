@@ -76,7 +76,7 @@ useEffect(() => {
                   {label}
                 </p>
               </Link>
-              <div className='bg-gray-100 w-full h-1 my-2' />
+              <div className={`bg-gray-100 w-full h-1 my-2 ${!menu && "opacity-0"}`} />
             </li>
           ))}
           <li className='flex flex-col items-center my-2'>
