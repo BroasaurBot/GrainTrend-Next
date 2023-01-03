@@ -48,6 +48,6 @@ export const coreValues = [
         title: "Professionalism",
         description: "At Graintrend, professionalism is a core value that guides everything we do. We understand that our clients and partners rely on us to conduct ourselves in a professional manner at all times. This means adhering to the highest standards of integrity, honesty, and reliability. It also means being responsive to our clients' needs and working to ensure that all of our interactions are productive and efficient.",
         image: "helicopter.jpg",
-        size: "w-[300px] h-[350px]",
+        size: "w-[300px] h-[370px]",
     },
 ];

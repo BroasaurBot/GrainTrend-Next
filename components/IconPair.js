@@ -2,7 +2,6 @@ import React from 'react'
 import styles from '../styles/style'
 
 function IconPair({title, description, image, size, reverse=false}) {
-    console.log("Rev" , reverse)
   return (
     <div className='my-5 '>
         <div className={`flex flex-col ${reverse ? "sm:flex-row-reverse" : "sm:flex-row"} 
