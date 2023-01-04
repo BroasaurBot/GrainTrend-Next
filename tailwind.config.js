@@ -2,7 +2,7 @@ const { EDGE_RUNTIME_WEBPACK } = require('next/dist/shared/lib/constants');
 
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./pages/**/*.{js,ts,jsx,tsx}", "./components/**/*.{js,ts,jsx,tsx}", "./content/**/*.{js,tx,jsx}"],
+  content: ["./pages/**/*.{js,ts,jsx,tsx}", "./components/**/*.{js,ts,jsx,tsx}", "./content/**/*.{js,tx,jsx}", "./styles/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
       fontFamily: {

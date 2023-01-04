@@ -46,8 +46,8 @@ function IconReel({reel}) {
                 ))}
             </div>
 
-            <div className='px-5 sm:px-16 lg:px-32 py-5 my-2 text-smear'>
-                <p className='text-center'>
+            <div className='px-5 sm:px-16 lg:px-32 py-5 my-2 text-smear h-[200px]'>
+                <p className='text-center text-lg lg:text-xl'>
                     {reel[selection].description}
                 </p>
             </div>

@@ -6,7 +6,7 @@ export default function Header() {
                 <source src="/Wheat_Blowing.mp4" type="video/mp4" />
               </video>
 
-              <div className='min-h-[80vh] -mb-20 flex flex-col justify-center items-center z-0'>
+              <div className='min-h-[80vh] -mb-6 flex flex-col justify-center items-center z-0'>
                 <h1 className='font-mono2 text-6xl md:text-7xl text-white font-semibold
                 border-b-8 border-dark-green'>
                   GrainTrend

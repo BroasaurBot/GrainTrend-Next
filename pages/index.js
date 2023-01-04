@@ -7,6 +7,7 @@ import { briefIntro, services, coreValues } from '../content/Home';
 import styles from '../styles/style';
 
 import { useState, useEffect } from 'react';
+import Title from '../components/Title';
 
 export default function Home() {
 
@@ -29,21 +30,23 @@ export default function Home() {
   return (
     <>
     <div className="flex flex-col justify-start items-center">
-      <p className={`${styles.centerContent}`}>
-        {briefIntro.p1}
-      </p> 
       <Quote>
         {briefIntro.quote}
       </Quote>
       <p className={`${styles.centerContent}`}>
+        {briefIntro.p1}
         {briefIntro.p2}
       </p> 
     </div>
+
+
     <div id="Services" className='mt-32'>
-      <h1>Services</h1>
+
+      <Title>Services</Title>
       <IconReel reel={services} />
     </div>
     <div id='Core values' className='mt-32'>
+      <Title>Core Values</Title>
       {mobile ? cardInfos() : iconPairs()}
     </div>
 

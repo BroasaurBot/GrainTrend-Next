@@ -10,11 +10,11 @@ function CardInfo({title, description, image, size}) {
         </h1>
       <div className={`${size} relative group`}>
           <div className='absolute top-0 left-0 w-full h-full bg-sunset-yellow-1 rounded-3xl'>
-              <p className='p-3'>
+              <p className='p-3 text-sm md:text-base'>
                 {description} 
               </p>
           </div>
-          <div className='absolute bottom-0 left-0 w-full h-full rounded-3xl
+          <div className='absolute bottom-0 left-0 w-full h-[97%] rounded-3xl bg-dark-green
               ease-in-out duration-700 group-hover:h-12 flex flex-col justify-start items-center'>
               
               <img src={image} alt={title} className='w-full h-full object-cover absolute rounded-3xl'/>
