@@ -63,9 +63,9 @@ function PhotoBar() {
         <div id='photobar' className='w-full h-full'>
             <div className="flex flex-row gap-2 md:gap-4 items-center justify-center
               overflow-x-hidden w-full h-full bar-mask" >
-              {imageReel.slice(0, maxReelSize).map((img) => {
+              {imageReel.slice(0, maxReelSize).map((img, key) => {
                 return (
-                  <div className='h-44 w-32 md:h-52 md:w-40 shrink-0' >
+                  <div id={key} className='h-44 w-32 md:h-52 md:w-40 shrink-0' >
                     <img src={img} alt='Grain' className={`object-cover h-full w-full
                     transition-opacity duration-500
                     ${imageDim == 'dim' ? "opacity-0" : "opacity-100"}`}/>
