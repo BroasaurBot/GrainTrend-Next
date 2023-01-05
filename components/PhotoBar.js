@@ -62,7 +62,7 @@ function PhotoBar() {
     <>
         <div id='photobar' className='w-full h-full'>
             <div className="flex flex-row gap-2 md:gap-4 items-center justify-center
-              overflow-x-hidden w-full h-full bar-mask" >
+              overflow-x-hidden w-full h-full horizontal-mask" >
               {imageReel.slice(0, maxReelSize).map((img) => {
                 return (
                   <div key={img} className='h-44 w-32 md:h-52 md:w-40 shrink-0' >

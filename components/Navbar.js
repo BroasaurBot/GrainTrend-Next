@@ -17,7 +17,7 @@ export default function Navbar() {
   }, []);
 
   const colourNav = () => {
-    if (window.scrollY > 10) {
+    if (window.scrollY > 50) {
       setNavClear(false);
     } else {
       setNavClear(true);
@@ -40,11 +40,11 @@ export default function Navbar() {
   return (
 
     <>
-      <div className={`w-full h-14 fixed top-0 left-0 z-[15]
-        ${navClear ? "" : "bg-sunset-yellow h-20"}`}>
+      <div className={`fixed  w-full h-14 top-0 left-0 z-[15]
+        ${navClear ? "" : "bg-sunset-yellow h-14"}`}>
         <div className={`max-w-screen-xl mx-auto flex h-full items-center transitional-all 
         ${menu ? "bg-white md:bg-transparent" : "bg-transparent"}`}>
-          <div className='h-full mx-3 shrink-0'>
+          <div className='h-full mx-3 '>
             <Link href={'/'}>
               <img className='object-contain h-full'
                 src={'/GrainTrend_Clear.png'}
@@ -81,7 +81,7 @@ export default function Navbar() {
           </div>
         </div>
 
-        <div className={`${menu ? 'flex flex-col justify-space items-center h-[80vh]' : 'opacity-0 h-0'} md:hidden bg-white
+        <div className={`${menu ? 'flex flex-col justify-space items-center h-[80vh]' : 'opacity-0 h-0'} md:hidden overflow-hidden bg-white
           backdrop-blur-3xl transition-all duration-500`}>
           <ul className='flex flex-col my-4'>
             {links.map(({href, label}, index) => (

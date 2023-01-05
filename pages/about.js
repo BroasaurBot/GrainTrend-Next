@@ -1,5 +1,6 @@
 import React from 'react'
 import CardInfo from '../components/CardInfo';
+import Header from '../components/Header';
 import PhotoBar from '../components/PhotoBar'
 import Title from '../components/Title'
 import { Team } from '../content/About';
@@ -8,10 +9,11 @@ import styles from '../styles/style';
 export default function AboutPage() {
   return (
     <>
+      <Header {...{title: "About Us"}}/>
       <div className='flex flex-col justify-start items-center'>
         <div id="Team">
           <Title>Team</Title>
-          <p className={`${styles.paragraph} text-smear my-12 px-16`}>
+          <p className={`${styles.paragraph} text-smear my-12 px-8 md:px-16`}>
             {Team.text}
           </p>
 

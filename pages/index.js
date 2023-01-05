@@ -2,6 +2,7 @@ import Image from 'next/image'
 import CardInfo from '../components/CardInfo';
 import IconPair from '../components/IconPair';
 import IconReel from '../components/IconReel';
+import Header from '../components/Header';
 import Quote from '../components/Quote';
 import { briefIntro, services, coreValues } from '../content/Home';
 import styles from '../styles/style';
@@ -30,6 +31,7 @@ export default function Home() {
   return (
     <>
     <div className="flex flex-col justify-start items-center">
+      <Header {...{title: "GrainTrend", subtitle: "Partnering Global Agribusienss"}}/>
       <Quote>
         {briefIntro.quote}
       </Quote>

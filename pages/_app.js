@@ -3,7 +3,6 @@ import Head from 'next/head'
 
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
-import Header from '../components/Header';
 
 export default function App({ Component, pageProps }) {
   return (
@@ -15,8 +14,7 @@ export default function App({ Component, pageProps }) {
       </Head>
 
       <Navbar />
-      <Header />
-      <div className='max-w-screen-xl px-6 md:px-10 lg:px-14 mx-auto my-6 md:my-16'>
+      <div className='max-w-screen-xl px-6 md:px-10 lg:px-14 mx-auto my-14'>
         <Component {...pageProps} />
       </div>
       <Footer />
