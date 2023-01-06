@@ -3,7 +3,7 @@ import React from 'react'
 export default function Header({title, subtitle}) {
   return (
       <div className='w-full min-h-[80vh]'>
-          <video className='absolute top-0 left-0 min-w-full h-[80vh] object-cover -z-10' autoPlay muted loop id='wheat'>
+          <video className='absolute top-0 left-0 min-w-full h-[80vh] object-cover -z-10 contrast-[0.9]' autoPlay muted loop id='wheat'>
             <source src="/Wheat_Blowing.mp4" type="video/mp4" />
           </video>
 

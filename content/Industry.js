@@ -1,5 +1,5 @@
 export const vendorDocuments = {
-    description: "Here are some important documents for conducting business with GrainTrend",
+    description: "Below are some documents that you may need to complete business with us. Just click on the links below",
     documents: [
         {
             title: `Vendor Declaration`,
@@ -20,31 +20,31 @@ export const vendorDocuments = {
 }
 
 export const webLinks = {
-    description: "",
+    description: "Its good ot keep yourself up to date with the latest news and information. Below are some links to some of the best sites with the grain knowledge you might need.",
     links: [
         {
             title: "Grain Trade Australia",
-            link: "www.graintrade.org.au",
-            image: "/attachment.png",
-            size: "w-[20px] h-[20px]"
+            link: "https://www.graintrade.org.au",
+            image: "/GrainTrade.png",
+            size: "w-[80px] h-[80px]"
         },
         {
             title: "Gafta",
             link: "https://www.gafta.com/",
-            image: "/attachment.png",
-            size: "w-[20px] h-[20px]"
+            image: "/gafta.png",
+            size: "w-[80px] h-[80px]"
         },
         {
             title: "Global Pulse Confederation",
             link: "https://www.globalpulses.com/",
-            image: "/attachment.png",
-            size: "w-[20px] h-[20px]"
+            image: "/gpc.png",
+            size: "w-[80px] h-[80px]"
         },
         {
             title: "Bereau of Meteorology",
             link: "https://www.bom.gov.au/",
-            image: "/attachment.png",
-            size: "w-[20px] h-[20px]"
+            image: "/bom.png",
+            size: "w-[80px] h-[80px]"
         }
     ]
 }

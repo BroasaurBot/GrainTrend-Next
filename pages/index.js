@@ -30,8 +30,8 @@ export default function Home() {
 
   return (
     <>
+    <Header {...{title: "GrainTrend", subtitle: "Partnering Global Agribusienss"}}/>
     <div className="flex flex-col justify-start items-center">
-      <Header {...{title: "GrainTrend", subtitle: "Partnering Global Agribusienss"}}/>
       <Quote>
         {briefIntro.quote}
       </Quote>

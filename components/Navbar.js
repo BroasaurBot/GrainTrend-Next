@@ -17,7 +17,7 @@ export default function Navbar() {
   }, []);
 
   const colourNav = () => {
-    if (window.scrollY > 50) {
+    if (window.scrollY > 70) {
       setNavClear(false);
     } else {
       setNavClear(true);
@@ -40,9 +40,9 @@ export default function Navbar() {
   return (
 
     <>
-      <div className={`fixed  w-full h-14 top-0 left-0 z-[15]
-        ${navClear ? "" : "bg-sunset-yellow h-14"}`}>
-        <div className={`max-w-screen-xl mx-auto flex h-full items-center transitional-all 
+      <div className={`fixed  w-full h-16 top-0 left-0 z-[15]
+        ${navClear ? "" : "bg-sunset-yellow bottom-mask"}`}>
+        <div className={`max-w-screen-xl mx-auto flex h-full items-center transitional-all pt-1 pb-4
         ${menu ? "bg-white md:bg-transparent" : "bg-transparent"}`}>
           <div className='h-full mx-3 '>
             <Link href={'/'}>
@@ -62,7 +62,7 @@ export default function Navbar() {
                       {label}
                     </p>
                   </Link>
-                <div className='bg-gray-100 w-1 h-8' />
+                <div className='bg-gray-400 w-1 h-8 rounded-xl opacity-20' />
                 </li>
               ))}
             </ul>
