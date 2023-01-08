@@ -40,8 +40,8 @@ export default function Navbar() {
   return (
 
     <>
-      <div className={`fixed  w-full h-16 top-0 left-0 z-[15]
-        ${navClear ? "" : "bg-sunset-yellow bottom-mask"}`}>
+      <div className={`fixed w-full h-16 top-0 left-0 z-[15]
+        ${navClear ? "" : "bg-sunset-yellow"}`}>
         <div className={`max-w-screen-xl mx-auto flex h-full items-center transitional-all pt-1 pb-4
         ${menu ? "bg-white md:bg-transparent" : "bg-transparent"}`}>
           <div className='h-full mx-3 '>
@@ -81,7 +81,7 @@ export default function Navbar() {
           </div>
         </div>
 
-        <div className={`${menu ? 'flex flex-col justify-space items-center h-[80vh]' : 'opacity-0 h-0'} md:hidden overflow-hidden bg-white
+        <div className={`${menu ? 'flex flex-col justify-space items-center h-[100vh]' : 'opacity-0 h-0 overflow-hidden'} md:hidden bg-white
           backdrop-blur-3xl transition-all duration-500`}>
           <ul className='flex flex-col my-4'>
             {links.map(({href, label}, index) => (
