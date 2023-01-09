@@ -10,7 +10,7 @@ function CardInfo({title, description, image, size}) {
         </h1>
       <div className={`${size} relative group`}>
           <div className='absolute top-0 left-0 w-full h-full bg-sunset-yellow-1 rounded-3xl'>
-              <p className='p-3 text-sm md:text-base'>
+              <p className={`p-3 ${styles.paragraph}`}>
                 {description} 
               </p>
           </div>

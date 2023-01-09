@@ -12,7 +12,7 @@ export const services = [
         size: " p-4 md:p-6 "
     },
     {
-        title: "Trucking",
+        title: "Frieght",
         description: "Graintrend transports grain within Australia via truck using a network of reliable carriers. They coordinate pickups and deliveries and have systems in place to track shipments and stay in communication with the carriers to ensure a smooth and efficient process",
         image: "/services/truck.png",
         size: " p-4 md:p-6 "

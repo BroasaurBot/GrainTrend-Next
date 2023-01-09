@@ -33,7 +33,6 @@ export default function Navbar() {
   const links = [
     {href: '/', label: 'Home'},
     {href: '/about', label: 'About Us'},
-    {href: '/durum', label: 'Australian Durum'},
     {href: '/industry', label: 'Industry Links'},
   ]
 
@@ -41,8 +40,8 @@ export default function Navbar() {
 
     <>
       <div className={`fixed w-full h-16 top-0 left-0 z-[15]
-        ${navClear ? "" : "bg-sunset-yellow"}`}>
-        <div className={`max-w-screen-xl mx-auto flex h-full items-center transitional-all pt-1 pb-4
+        ${navClear ? "" : "bg-sunset-yellow drop-shadow-md"}`}>
+        <div className={`max-w-screen-xl mx-auto flex h-full items-center transitional-all pt-2 pb-2
         ${menu ? "bg-white md:bg-transparent" : "bg-transparent"}`}>
           <div className='h-full mx-3 '>
             <Link href={'/'}>
@@ -69,7 +68,7 @@ export default function Navbar() {
 
             <div className='ml-2'>
               <Button path={'/contact'}>
-                Contact
+                <p className='px-3'>Contact</p>
               </Button>
             </div>
           </div>

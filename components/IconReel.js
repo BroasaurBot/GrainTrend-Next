@@ -24,8 +24,8 @@ function IconReel({reel}) {
     const unselectedStyle = "highlight-light"
 
     return (
-    <div className='mx-5 min-h-[25rem]'>
-        <div className='max-w-4xl mx-auto'>
+    <div className='mx-3 min-h-[22rem]'>
+        <div className=' mx-auto'>
             <div className="flex flex-row flex-wrap justify-around items-center">
                 {reel.map((service, index) => (
                     <div className='flex flex-col items-center pt-4' key={index} onClick={() => handleMouseEnter(index)}>
@@ -46,8 +46,8 @@ function IconReel({reel}) {
                 ))}
             </div>
 
-            <div className='px-5 sm:px-16 lg:px-32 py-5 my-2 text-smear min-h-[200px]'>
-                <p className='text-center text-lg lg:text-xl'>
+            <div className='px-5 sm:px-16 lg:px-32 py-5 my-2 text-smear'>
+                <p className='text-center text-base sm:text-lg lg:text-xl'>
                     {reel[selection].description}
                 </p>
             </div>
