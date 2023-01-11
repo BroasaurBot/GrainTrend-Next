@@ -10,8 +10,8 @@ export default function Footer() {
       </div>
       <div className='bg-dark-green py-1 px-6'>
         <div className='border-t-2 border-burnt-yellow py-3 flex flex-row justify-between items-end'>
-          <img src={"GrainTrend_Clear.png"} className='brightness-[5] w-[12rem] md:w-[16rem]'/>
-          <p className='text-gray-200 text-xs sm:text-base text-sans justify-self-center'>Copyright <span>&copy;</span> 2023 GrainTrend </p>
+          <img src={"GrainTrend_Clear.png"} className='brightness-[5] w-[8rem] sm:w-[12rem] md:w-[16rem]'/>
+          <p className='text-gray-200 text-xs sm:text-base text-sans text-right'>Copyright <span>&copy;</span> 2023 GrainTrend </p>
         </div>
       </div>
     </div>

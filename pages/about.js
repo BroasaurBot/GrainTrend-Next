@@ -65,7 +65,7 @@ export default function AboutPage() {
 
         <div id='Core values' className='mb-16'>
           <Title>Core Values</Title>
-          <p className={`${styles.text_lg} pb-12`}>{coreValues.description}</p>
+          <p className={`${styles.text} ${styles.text_highlight} mb-12`}>{coreValues.description}</p>
           {mobile ? cardInfos() : iconPairs()}
         </div>
 

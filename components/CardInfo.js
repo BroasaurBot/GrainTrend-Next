@@ -10,7 +10,7 @@ function CardInfo({title, description, image, size}) {
         </h1>
       <div className={`${size} relative group`}>
           <div className='absolute top-0 left-0 w-full h-full bg-amber-100 rounded-3xl'>
-              <p className={`p-3 ${styles.text}`}>
+              <p className={`p-3 ${styles.text} overflow-scroll`}>
                 {description} 
               </p>
           </div>

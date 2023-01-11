@@ -5,25 +5,25 @@ export const Team = {
             title: "Peter Howard",
             description: "Peter Howard has over 40 years of experience in the grain industry. Holding a Bachelor of Agricultural Economics and Diplomas in Financial Management and Law. Before Graintrend, Peter worked for Cargill and Continental Grain, and he founded New England Agricultural Traders (NEAT), where he was a major supplier of feed domestically. Peter is currently registered as a Grain Trade Australia (GTA) arbitrator.",
             image: "/blank-profile.jpg",
-            size: "w-[256px] sm:w-[280px] md:w-[330px] xl:w-[400px] h-[320px] sm:h-[350px] md:h-[405px] xl:h-[500px]"
+            size: "w-[250px] sm:w-[230px] md:w-[260px] lg:w-[280px] h-[300px] sm:h-[320px] sd:h-[455px] md:h-[400px]"
         },
         {
             title: "Sanjiv Dubey",
             description: "Sanjiv is a seasoned international trader with more than 17 years of experience in the industry. He holds a Master's degree in Economic and has spoken at numerous international industry meetings. Sanjiv has held leadership positions in the Global Pulses Confederation (GPC) and Pulse Australia Limited, and currently serves as a Grain Trade Australia (GTA) arbitrator",
             image: "/blank-profile.jpg",
-            size: "w-[256px] sm:w-[280px] md:w-[330px] xl:w-[400px] h-[320px] sm:h-[350px] md:h-[405px] xl:h-[500px]"
+            size: "w-[250px] sm:w-[230px] sl:w-[360px] md:w-[310px] md:300px] h-[300px] sm:h-[320px] sd:h-[455px] md:h-[400px]"
         },
         {
             title: "Angie Hidalgo",
             description: "",
             image:"/blank-profile.jpg",
-            size: "w-[256px] sm:w-[280px] md:w-[330px] xl:w-[400px] h-[320px] sm:h-[350px] md:h-[405px] xl:h-[500px]"
+            size: "w-[250px] sm:w-[230px] sl:w-[360px] md:w-[310px] md:300px] h-[300px] sm:h-[320px] sd:h-[455px] md:h-[400px]"
         }
     ]
 };
 
 export const coreValues = {
-    description: "Graintrend believes in it's core values, they are used to lead every action and and relationshiop undertaken.",
+    description: "Graintrend's core values of communication, experience, and professionalism guide the way the company conducts its business. Together, these core values help Graintrend provide a top-quality service to their clients, while building long-term relationships based on trust and satisfaction.",
     values : [
         {
             title: "Communication",
