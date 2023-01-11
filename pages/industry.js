@@ -1,6 +1,5 @@
 import React from 'react'
-import Header from '../components/Header'
-import IconReel from '../components/IconReel'
+import Hero from '../components/Hero'
 
 import Title from '../components/Title'
 import { vendorDocuments, webLinks } from '../content/Industry'
@@ -9,19 +8,19 @@ import styles from '../styles/style'
 export default function IndustryPage() {
   return (
     <div>
-      <Header {...{title: "Industry"}}/>
+      <Hero {...{title: "Industry"}}/>
       <div>
         <Title>Vendor Documents</Title>
-        <p className={`${styles.centerContent}`}>{vendorDocuments.description}</p>
+        <p className={`${styles.text_lg} mb-8`}>{vendorDocuments.description}</p>
 
-        <div id="Documents">
-          <div className='flex flex-col sm:flex-row justify-around items-center gap-8 md:gap-14 my-14'>
+        <div id="Documents" className='mb-24 md:mb-36'>
+          <div className='flex flex-col sm:flex-row justify-around items-center gap-8 md:gap-14'>
             {vendorDocuments.documents.map((doc, i) => (
               <div key={i} className='relative flex flex-col justify-start items-center group
                 h-[180px] sm:h-full overflow-clip max-w-[80%]'>
                 <h2 className={`${styles.sub_title_small} text-center text-dark-green`}>{doc.title}</h2>
                 <a href={doc.link} download 
-                    className='rounded-xl text-smear p-3 vertical-mask flex flex-col items-center'>
+                    className='rounded-xl text-smear-both p-3 vertical-mask flex flex-col items-center'>
                   <img src={doc.image} alt={doc.title} 
                     className="w-full h-full contrast-[0.9] group-hover:contrast-[1]" />
 
@@ -41,7 +40,7 @@ export default function IndustryPage() {
 
       <div>
         <Title>Web Links</Title>
-        <p className={`${styles.centerContent}`}>
+        <p className={`${styles.text_lg}`}>
           {webLinks.description}
         </p>
         
@@ -49,8 +48,8 @@ export default function IndustryPage() {
           {webLinks.links.map((link, i) => (
             <div key={i} className='flex flex-col justify-end items-center group'>
               <a href={link.link} target="_blank" rel="noreferrer" className={`flex flex-col items-center
-                w-[80px] bg-gren-300`}>
-                <h1 className='text-sm text-center mb-3 border-b-2 border-burnt-yellow text-dark-green '>{link.title}</h1>
+                w-[100px] bg-gren-300`}>
+                <h1 className={`text-center mb-3 border-b-2 border-burnt-yellow text-dark-green`}>{link.title}</h1>
                 <div className={`${link.size}`}>
                   <img src={link.image} alt={link.title} className={`w-full object-fit group-hover:scale-125
                     transition-all duration-200`} />

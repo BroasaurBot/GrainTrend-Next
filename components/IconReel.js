@@ -1,5 +1,6 @@
 import React from 'react'
 import {useEffect, useState} from 'react';
+import styles from '../styles/style';
 
 function IconReel({reel}) {
 
@@ -20,13 +21,14 @@ function IconReel({reel}) {
         sethasSelected(true);
     }
 
-    const selectStyle = "highlight"
+    const selectStyle = "highlight rounded"
     const unselectedStyle = "highlight-light"
 
     return (
-    <div className='mx-3 min-h-[22rem]'>
-        <div className=' mx-auto'>
-            <div className="flex flex-row flex-wrap justify-around items-center">
+    <div className='min-h-[22rem]'>
+        <div className='block md:flex flex-row'>
+
+            <div className="flex flex-row flex-wrap justify-around items-center w-full md:w-[50%]">
                 {reel.map((service, index) => (
                     <div className='flex flex-col items-center pt-4' key={index} onClick={() => handleMouseEnter(index)}>
 
@@ -37,17 +39,17 @@ function IconReel({reel}) {
                                 className={`w-full z-0
                                 ${index == selection ? "contrast-100" : "contrast-[0.2] hover:contrast-100"}`} 
                                 src={service.image} alt={service.title} />
+                            <h1 className={`mt-3 text-sm text-center ${index==selection ? "font-bold" : ""}`}>
+                                {service.title}
+                            </h1>
                         </button>
 
-                        <h1 className={`mt-3 font-mono ${index==selection ? "font-bold" : ""}`}>
-                            {service.title}
-                        </h1>
                     </div>
                 ))}
             </div>
 
-            <div className='px-5 sm:px-16 lg:px-32 py-5 my-2 text-smear'>
-                <p className='text-center text-base sm:text-lg lg:text-xl'>
+            <div className={`${styles.text} ${styles.text_highlight} w-full md:w-[50%]`}>
+                <p className={`${styles.text}`}>
                     {reel[selection].description}
                 </p>
             </div>

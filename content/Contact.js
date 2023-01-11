@@ -5,8 +5,8 @@ export const contactInfo = {
     contacts: [
         {
             title:"Location",
-            description: "Suite 312, 203-233 New South Head Road Edgecliff NSW 2027",
-            link: <a className='text-blue-500' target='_blank' href='https://goo.gl/maps/xuvxXX91agQ4774o8'>Suite 312, 203-233 New South Head Road Edgecliff NSW 2027</a>,
+            description: "203/233 New South Head Rd, Edgecliff NSW 2027",
+            link: <a className='text-blue-500' target='_blank' href='https://goo.gl/maps/qezs1umDQ1WJRVwj8'>(Suite 312) 203/233 New South Head Rd, Edgecliff NSW 2027</a>,
             icon: "location.png",
             size: "w-[40px]"
         },

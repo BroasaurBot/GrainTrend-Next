@@ -1,78 +1,47 @@
-import Image from 'next/image'
-import CardInfo from '../components/CardInfo';
-import IconPair from '../components/IconPair';
-import IconReel from '../components/IconReel';
-import Header from '../components/Header';
+import IconList from '../components/IconList';
+import Hero from '../components/Hero';
 import Quote from '../components/Quote';
-import { briefIntro, services, coreValues } from '../content/Home';
+import { briefIntro, services, products } from '../content/Home';
 import styles from '../styles/style';
 
-import { useState, useEffect } from 'react';
 import Title from '../components/Title';
+import PhotoBar from '../components/PhotoBar';
 
 export default function Home() {
 
-  const [mobile, setMobile] = useState(false);
-  useEffect(() => {
-    const changeMobile = () => {
-      if (window.innerWidth < 640) {
-        setMobile(true);
-      } else {
-        setMobile(false);
-      }
-    }
-
-    window.addEventListener('resize', changeMobile);
-    changeMobile();
-
-    return () => window.removeEventListener('resize', changeMobile);
-  }, []);
 
   return (
     <>
-    <Header {...{title: "GrainTrend", subtitle: "Partnering Global Agribusienss"}}/>
-    <div className="flex flex-col justify-start items-center">
-      <Quote>
-        {briefIntro.quote}
-      </Quote>
-      <p className={`${styles.centerContent}`}>
+    <Hero {...{title: "GrainTrend", subtitle: "Partnering Global Agribusienss"}}/>
+    <div className="flex flex-col justify-start items-start mb-24 md:mb-36">
+      <Title>Welcome to GrainTrend</Title>
+      <p className={`${styles.text} ${styles.text_highlight}`}>
         {briefIntro.p1}
         {briefIntro.p2}
       </p> 
+      <Quote>
+        {briefIntro.quote}
+      </Quote>
     </div>
 
 
-    <div id="Services" className='mt-32'>
+    <div className='mb-24 md:mb-36'>
+      <PhotoBar/>
+    </div>
 
+    <div id="Services" className='mb-24 md:mb-36'>
       <Title>Services</Title>
-      <IconReel reel={services} />
+      <p className={`${styles.text} ${styles.text_highlight} mb-6`}>{services.description}</p>
+      <IconList content={services.list} size={"w-[18rem]"} />
     </div>
-    <div id='Core values' className='mt-32'>
-      <Title>Core Values</Title>
-      {mobile ? cardInfos() : iconPairs()}
+
+    <div id="Products" className='mb-24 md:mb-36'>
+      <Title>Products</Title>
+      <p className={`${styles.text} ${styles.text_highlight} mb-6`}>{products.description}</p>
+      <IconList content={products.list} size={"w-[8rem] sm:w-[12rem] md:w-[16rem]"}/>
     </div>
 
 
     </>
   )
-}
-
-const iconPairs = () => {
-  return (
-      <div className=''>
-        <IconPair {... coreValues[0]} reverse={false}/>
-        <IconPair {... coreValues[1]} reverse={true}/>
-        <IconPair {... coreValues[2]} reverse={false}/>
-      </div>
-  );
-}
-
-const cardInfos = () => {
-  return (
-        <div className='flex flex-col justify-start items-center gap-6'>
-          <CardInfo {... coreValues[0]} />
-          <CardInfo {... coreValues[1]} />
-          <CardInfo {... coreValues[2]} />
-        </div>
-  );
 }

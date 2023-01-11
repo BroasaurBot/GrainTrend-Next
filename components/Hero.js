@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default function Header({title, subtitle}) {
+export default function Hero({title, subtitle}) {
   return (
       <div className='w-full min-h-[80vh]'>
           <video className='absolute top-0 left-0 min-w-full h-[80vh] object-cover -z-10 contrast-[0.9]' autoPlay muted loop id='wheat'>
@@ -8,7 +8,7 @@ export default function Header({title, subtitle}) {
           </video>
 
           <div className='min-h-[80vh] flex flex-col justify-center items-center z-0'>
-            <h1 className='font-mono2 text-6xl md:text-7xl text-white font-semibold
+            <h1 className='font-sans text-6xl md:text-7xl text-white font-semibold
             border-b-8 border-dark-green'>
               {title != undefined ? title : ""}
             </h1>

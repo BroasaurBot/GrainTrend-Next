@@ -33,6 +33,7 @@ export default function Navbar() {
   const links = [
     {href: '/', label: 'Home'},
     {href: '/about', label: 'About Us'},
+    {href: '/ausDurum', label: 'Australian Durum Company'},
     {href: '/industry', label: 'Industry Links'},
   ]
 

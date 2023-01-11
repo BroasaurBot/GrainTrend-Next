@@ -12,16 +12,36 @@ export const Team = {
             description: "Sanjiv is a seasoned international trader with more than 17 years of experience in the industry. He holds a Master's degree in Economic and has spoken at numerous international industry meetings. Sanjiv has held leadership positions in the Global Pulses Confederation (GPC) and Pulse Australia Limited, and currently serves as a Grain Trade Australia (GTA) arbitrator",
             image: "/blank-profile.jpg",
             size: "w-[256px] sm:w-[280px] md:w-[330px] xl:w-[400px] h-[320px] sm:h-[350px] md:h-[405px] xl:h-[500px]"
+        },
+        {
+            title: "Angie Hidalgo",
+            description: "",
+            image:"/blank-profile.jpg",
+            size: "w-[256px] sm:w-[280px] md:w-[330px] xl:w-[400px] h-[320px] sm:h-[350px] md:h-[405px] xl:h-[500px]"
         }
     ]
 };
 
-export const AustralianDurum = {
-    main: "The Australian Durum Company (ADC) is a specialized trading arm of the GrainTrend group that focuses on the trade of durum. ADC sources most of its durum from Northern New South Wales and Southern Queensland, and exports it to destinations such as Italy, North Africa, and the Middle East.",
-    more: "To ensure the highest quality and maximize sales, ADC conducts rigorous testing of its durum. This includes collecting samples from durum growers at harvest and analyzing them for factors such as protein content, vitreous kernels, test weight, and other quality parameters.",
-    more2:"These reports provide industry participants and overseas consumers with detailed information about the quality of the durum, allowing for proper valuation. This in turn drive higher sales, as the quality of the produce is appreciated.",
-    more3: "By working closely with durum growers and implementing these strict quality controls, ADC is able to ensure that it delivers only the best to its customers.",
-    image: "wheat-machine.jpg"
-
-
+export const coreValues = {
+    description: "Graintrend believes in it's core values, they are used to lead every action and and relationshiop undertaken.",
+    values : [
+        {
+            title: "Communication",
+            description: "At Graintrend, we understand that good communication is essential for the success of any partnership. Whether it's through regular check-ins, providing updates on shipments, or simply being available to answer questions, we strive to ensure that our customers always feel informed and supported.",
+            image: "/fieldWork.jpg",
+            size: "w-[300px] h-[350px]",
+        },
+        {
+            title: "Experience",
+            description: "The GrainTrend team has been trading grain in Australia for than 20+ years. This experience is valuable insider knowledge of the industry and is our advantage in everything we do. Whether it's our expertise in sourcing high-quality grain, ability to navigate the complexities of international trade, our experience allows us to deliver effective solutions.",
+            image: "lotsGrain.jpg",
+            size: "w-[300px] h-[350px]",
+        },
+        {
+            title: "Professionalism",
+            description: "At Graintrend, professionalism is a core value that guides everything we do. We understand that our clients and partners rely on us to conduct ourselves in a professional manner at all times. This means adhering to the highest standards of integrity, honesty, and reliability. It also means being responsive to our clients' needs and working to ensure that all of our interactions are productive and efficient.",
+            image: "helicopter.jpg",
+            size: "w-[300px] h-[370px]",
+        }
+    ]
 };

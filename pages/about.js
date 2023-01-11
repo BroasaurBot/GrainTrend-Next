@@ -1,47 +1,76 @@
-import React from 'react'
+import React, {useState, useEffect} from 'react'
 import CardInfo from '../components/CardInfo';
-import Header from '../components/Header';
-import PhotoBar from '../components/PhotoBar'
+import Hero from '../components/Hero';
+import IconPair from '../components/IconPair';
+
 import Title from '../components/Title'
-import { Team, AustralianDurum } from '../content/About';
+import { Team, AustralianDurum , coreValues} from '../content/About';
 import styles from '../styles/style';
 
 export default function AboutPage() {
+
+  const [mobile, setMobile] = useState(false);
+  useEffect(() => {
+    const changeMobile = () => {
+      if (window.innerWidth < 640) {
+        setMobile(true);
+      } else {
+        setMobile(false);
+      }
+    }
+
+    window.addEventListener('resize', changeMobile);
+    changeMobile();
+
+    return () => window.removeEventListener('resize', changeMobile);
+  }, []);
+
+  const iconPairs = () => {
+    return (
+        <div className=''>
+          <IconPair {... coreValues.values[0]} reverse={false}/>
+          <IconPair {... coreValues.values[1]} reverse={true}/>
+          <IconPair {... coreValues.values[2]} reverse={false}/>
+        </div>
+    );
+  }
+
+  const cardInfos = () => {
+    return (
+          <div className='flex flex-col justify-start items-center gap-8'>
+            <CardInfo {... coreValues.values[0]} />
+            <CardInfo {... coreValues.values[1]} />
+            <CardInfo {... coreValues.values[2]} />
+          </div>
+    );
+  }
+
   return (
     <>
-      <Header {...{title: "About Us"}}/>
-      <div className='flex flex-col justify-start items-center'>
-        <div id="Team">
-          <Title>Team</Title>
-          <p className={`${styles.centerContent} text-smear my-6 px-8 py-3 md:px-16`}>
+      <Hero {...{title: "About Us"}}/>
+      <div>
+        <div id="Team" className="mb-24 md:mb-36">
+          <Title>Meet the Team</Title>
+          <p className={`${styles.text} ${styles.text_highlight}`}>
             {Team.text}
           </p>
 
-          <div className='flex flex-col sm:flex-row justify-around items-center gap-10 md:gap-16 my-14'>
+          <div className='flex  flex-wrap justify-around items-center gap-10 md:gap-16 mt-14'>
             <CardInfo {...Team.members[0]} />
             <CardInfo {...Team.members[1]} />
+            <CardInfo {...Team.members[2]} />
           </div>
 
         </div>
-        <PhotoBar />
-        <div className="mt-12 mb-6" id="Australian Durum">
-          <Title>Australian Durum Company</Title>
 
-          <p className={`${styles.centerContent} text-smear my-6 px-8 py-3 md:px-16`}>
-            {AustralianDurum.main} 
-          </p>
-          <div className="flex flex-col sm:flex-row w-full gap-3 sm:gap-8">
-            <div>
-              <p className={`${styles.paragraph}`}> {AustralianDurum.more}<br/><br/></p>
-              <p className={`${styles.paragraph}`}> {AustralianDurum.more2}<br/><br/></p>
-              <p className={`${styles.paragraph}`}> {AustralianDurum.more3}<br/><br/></p>
-            </div>
-            <div className='w-[100%]'>
-              <img src={AustralianDurum.image} alt="Australian Durum" className="w-full h-full object-cover" />
-            </div>
-          </div>
+        <div id='Core values' className='mb-16'>
+          <Title>Core Values</Title>
+          <p className={`${styles.text_lg} pb-12`}>{coreValues.description}</p>
+          {mobile ? cardInfos() : iconPairs()}
         </div>
+
       </div>
     </>
   )
+
 }

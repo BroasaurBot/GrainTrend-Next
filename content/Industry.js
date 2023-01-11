@@ -8,13 +8,13 @@ export const vendorDocuments = {
         },
         {
             title: "RCTI Agreement Form",
-            link: "/files/RCTI-Agreement-Form.pdf",
-            image: "/files/RCTI-Agreement-Form.jpeg"
+            link: "/files/GrainTrend-RCTI-Agreement-Form.pdf",
+            image: "/files/GrainTrend-RCTI-Agreement-Form.jpeg"
         },
         {
             title: "Credit Application Form",
-            link: "/files/Credit-Application-2021.pdf",
-            image: "/files/Credit-Application-2021.jpeg"
+            link: "/files/GT-Credit-App.pdf",
+            image: "/files/GT-Credit-App.jpeg"
         }
     ]
 }

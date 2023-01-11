@@ -1,8 +1,9 @@
 const styles = {
-    centerContent : "font-sans text-center text-base md:text-xl leading-tight md:leading-relaxed mx-2 sm:mx-4 md:mx-10",
-    sub_title : "font-mono font-semibold text-xl md:text-2xl lg:text-4xl leading-tight md:leading-relaxed",
-    sub_title_small : "font-mono font-semibold text-lg md:text-xl lg:text-2xl leading-tight md:leading-relaxed",
-    paragraph: "font-sans text-sm md:text-base leading-tight md:leading-relaxed text-justify"
+    text: "font-sans text-sm md:text-base lg:textlg leading-tight md:leading-normal text-justify tracking-snug md:tracking-relaxed p-3",
+    text_highlight: "text-smear my-6 py-3 px-8 md:px-12 shadow-lg",
+    text_lg: "font-sans text-sm md:text-lg lg:text-xl leading-snug md:leading-relaxed text-justify tracking-snug md:tracking-relaxed p-5 font-normal",
+    sub_title : "font-mono font-semibold text-lg md:text-xl lg:text-2xl leading-tight md:leading-relaxed",
+    sub_title_small : "font-mono font-semibold text-base md:text-lg lg:text-2xl leading-tight md:leading-relaxed",
 };
 
 export default styles;
