@@ -3,13 +3,13 @@ export const Team = {
     members: [
         {
             title: "Peter Howard",
-            description: "Peter Howard has over 40 years of experience in the grain industry. Holding a Bachelor of Agricultural Economics and Diplomas in Financial Management and Law. Before Graintrend, Peter worked for Cargill and Continental Grain, and he founded New England Agricultural Traders (NEAT), where he was a major supplier of feed domestically. Peter is currently registered as a Grain Trade Australia (GTA) arbitrator.",
+            description: "Peter Howard is a director at Graintrend and has over 40 years of experience in the grain industry. Holding a Bachelor of Agricultural Economics and Diplomas in Financial Management and Law. Before Graintrend, Peter worked for Cargill and Continental Grain, and he founded New England Agricultural Traders (NEAT), where he was a major supplier of feed domestically. Peter is currently registered as a Grain Trade Australia (GTA) arbitrator.",
             image: "/blank-profile.jpg",
             size: "w-[250px] sm:w-[230px] md:w-[260px] lg:w-[280px] h-[300px] sm:h-[320px] sd:h-[455px] md:h-[400px]"
         },
         {
             title: "Sanjiv Dubey",
-            description: "Sanjiv is a seasoned international trader with more than 17 years of experience in the industry. He holds a Master's degree in Economic and has spoken at numerous international industry meetings. Sanjiv has held leadership positions in the Global Pulses Confederation (GPC) and Pulse Australia Limited, and currently serves as a Grain Trade Australia (GTA) arbitrator",
+            description: "Sanjiv, a director at GrainTrend is a seasoned international trader with more than 25 years of experience in the industry. He holds a Master's degree in Economic and has spoken at numerous international industry meetings. Sanjiv has held leadership positions in the Global Pulses Confederation (GPC) and Pulse Australia Limited, and currently serves as a Grain Trade Australia (GTA) arbitrator",
             image: "/blank-profile.jpg",
             size: "w-[250px] sm:w-[230px] sl:w-[360px] md:w-[310px] md:300px] h-[300px] sm:h-[320px] sd:h-[455px] md:h-[400px]"
         },

@@ -9,9 +9,9 @@ function IconList({content, size}) {
             {content.map((service, index) => (
 
                 <div key={index} className="relative flex flex-col max-w-[22rem]
-                    rounded-lg shadow-lg items-center p-1 sm:p-2
-                    bg-slate-50  border-b-4 border-burnt-yellow
-                    group hover:bg-slate-100">
+                    rounded-lg shadow-xl items-center p-1 sm:p-2
+                    bg-slate-100  border-b-4 border-burnt-yellow
+                    group hover:bg-slate-200">
                     <div className={`flex flex-row justify-start ${size} max-w-[22rem]
                         items-center p-3 `}>
                         <div className={`${service.size}`}>

@@ -3,14 +3,14 @@ import styles from '../styles/style'
 
 function CardInfo({title, description, image, size}) {
   return (
-    <div clasName=''>
+    <div >
         <h1 className={`z-10 group-hover:scale-0 duration-700 text-dark-green
         ${styles.sub_title} pb-3`}>
             {title}
         </h1>
       <div className={`${size} relative group`}>
           <div className='absolute top-0 left-0 w-full h-full bg-amber-100 rounded-3xl'>
-              <p className={`p-3 ${styles.text} overflow-scroll`}>
+              <p className={`p-3 ${styles.text}`}>
                 {description} 
               </p>
           </div>

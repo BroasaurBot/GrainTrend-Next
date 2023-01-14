@@ -41,8 +41,8 @@ export const webLinks = {
             size: "w-[80px] h-[80px]"
         },
         {
-            title: "Bereau of Meteorology",
-            link: "https://www.bom.gov.au/",
+            title: "Bureau of Meteorology",
+            link: "http://www.bom.gov.au/",
             image: "/bom.png",
             size: "w-[80px] h-[80px]"
         }

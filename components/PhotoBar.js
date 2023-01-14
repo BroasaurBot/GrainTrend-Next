@@ -33,13 +33,14 @@ function arrayRotate(arr, times) {
 }
 function PhotoBar() {
 
-  let startIndex = Math.floor((Math.random() * imageCount));
+  //let startIndex = Math.floor((Math.random() * imageCount));
+  let startIndex = 0;
   const [imageReel, setReel] = useState(arrayRotate([...imageNames], startIndex));
   const [imageDim, setDim] = useState('notdim');
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setReel(arrayRotate([...imageReel], 2));
+      setReel(arrayRotate([...imageReel], 4));
       setDim('notdim');
     }, rotateRate);
 

@@ -1,16 +1,16 @@
 export const briefIntro = {
     p1:"GrainTrend specializes in the buying and exporting grains grown in NSW, Australia. With a focus on building close relationships with local growers and leveraging experience in the industry, GrainTrend is able to source high-quality grains that meet the demands of international markets." ,
     p2 : " As a reliable and trusted partner, GrainTrend is committed to supporting the growth and success of their clients and partners.",
-    quote: "Graintrend connects local growers to abroad markets, providing reliable transportation."
+    quote: "Graintrend aims to make powerful partnerships between local grain farmers and the overseas industries." 
 };
 
 export const services = {
-    description: <p>Graintrend offers a comprehensive service that helps farmers sell their grain in the international market and enables buyers to access a wide range of grains from different regions of the world. <br/>The service includes testing of the grain, facilitating communication of contracts, and providing transportation and matchmaking services. Their operational area includes regions like Indian sub-continent, Southeast Asia, China, Europe, Africa, and the Middle East.<br/>The company prides itself on its transparent practices and ability to work closely with customers to meet their specific needs and requirements.</p>,
+    description: <span>Graintrend offers a comprehensive service that helps farmers sell their grain in the international market and enables buyers to access a wide range of grains from different regions of Australia. <br/>The service includes testing of the grain, facilitating communication of contracts, and providing transportation and matchmaking services. Their operational area includes regions of the Indian sub-continent, Southeast Asia, China, Europe, Africa, and the Middle East.<br/>The company prides itself on its transparent practices and ability to work closely with customers to meet their specific needs and requirements.</span>,
 
     list: [
         {
             title: "Testing",
-            description: "Graintrend tests all grain before shipping to ensure it meets the highest quality standards. This includes analyzing for factors such as moisture content, protein content, and foreign matter.",
+            description: "Graintrend tests grain before shipping to ensure it meets the highest quality standards. This includes analyzing for factors such as moisture content, protein content, and foreign matter.",
             image: "/services/wheat-testing.png",
             size: "w-12 sm:w-16 p-0 sm:p-2 "
         },
@@ -36,7 +36,7 @@ export const services = {
 }
 
 export const products = {
-    description: <p>Graintrend is a company that specializes in sourcing and selling a variety of grains and seed products from farmers to international markets.<br/> Their primary products include pulses, such as lentils and peas, as well as a variety of wheat including Durum, which is commonly used for pasta production, and different types of Barley, Sorghum and Cotton seeds.<br/> They work with farmers to ensure a steady supply of high-quality grains and seed products that meet the demands of their international customers.</p>,
+    description: <span>Graintrend is a company that specializes in sourcing and selling a variety of grains and seed products from farmers to international markets.<br/> Their primary products include pulses, such as lentils and peas, a variety of wheats including durum, and different types of Barley, Sorghum and Cotton seeds.<br/> They work with farmers to ensure a reliable supply of high-quality grains and seed products that meet the demands of their international customers.</span>,
     list: [
         {
             title: "Pulses",
@@ -74,5 +74,30 @@ export const products = {
             image: "cotton.png",
             size: "w-10 sm:w-14 p-1"
         },
+    ]
+}
+
+export const membership = {
+    description: <span>GrainTrend maintains strong industry ties, participating in the memberships of Australian agriculture authorities. Keeping up to date with the latest industry trends and standards ensures the best practices to protect the farmer and the buyer.<br/><br/> <span className='font-semibold'>GrainTrend are members of the following industry bodies:</span></span>,
+
+    list: [
+        {
+            title: "Grain Trade Australia",
+            link: "https://www.graintrade.org.au/",
+            image: "GrainTrade.png",
+            size: "w-[80px] h-[80px]"
+        },
+        {
+            title: "Pulse Australia",
+            link: "https://www.pulseaus.com.au/",
+            image: "/pulse-logo.png",
+            size: "w-[80px] h-[80px]"
+        },
+        {
+            title: "Global Pulse Confederation",
+            link: "https://globalpulses.com/",
+            image: "/gpc.png",
+            size: "w-[80px] h-[80px]"
+        }
     ]
 }

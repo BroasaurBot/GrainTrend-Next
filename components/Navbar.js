@@ -7,13 +7,17 @@ export default function Navbar() {
   const [menu, setMenu] = useState(false);
   const [navClear, setNavClear] = useState(true);
 
+  const handleClick = () => setMenu(!menu);
+  const closeMenu = () => setMenu(false);
+
   const showButton = () => {
   if(window.innerWidth >= 768) {
-      setMenu(false);
+    closeMenu()
     }};
 
   useEffect(() => {
-    showButton();
+    window.addEventListener('resize', showButton)
+    //return () => window.removeEventListener('resize', showButton);
   }, []);
 
   const colourNav = () => {
@@ -25,7 +29,7 @@ export default function Navbar() {
   }
   useEffect(() => {
     window.addEventListener('scroll', colourNav)
-    return () => window.removeEventListener('scroll', colourNav);
+    //return () => window.removeEventListener('scroll', colourNav);
   }, []);
 
 
@@ -75,18 +79,20 @@ export default function Navbar() {
           </div>
 
           <div className='ml-auto md:hidden'>
-            <div className='h-8 w-8 mx-3' onClick={() => setMenu(!menu)}>
+            <div className='h-8 w-8 mx-3' onClick={() => {handleClick(); console.log("Click!")}}>
               <img src={!menu ? '/list.png' : 'cross.png'} />
             </div>
           </div>
         </div>
 
-        <div className={`${menu ? 'flex flex-col justify-space items-center h-[100vh]' : 'opacity-0 h-0 overflow-hidden'} md:hidden bg-white
+        <div className={`z-[15] flex flex-col justify-space items-center overflow-hidden
+        ${menu ? 'h-[100vh] opacity-100' : 'opacity-0 h-0'} bg-white
           backdrop-blur-3xl transition-all duration-500`}>
+
           <ul className='flex flex-col my-4'>
             {links.map(({href, label}, index) => (
               <li key={`${href}${label}`} className='max-w-4 flex flex-col items-center justify-center'>
-                <Link href={href} onClick={() => setMenu(false)}>
+                <Link href={href} onClick={() => closeMenu()}>
                   <p className='text-center text-3xl text-gray-700 hover:text-gray-1000'> 
                     {label}
                   </p>
@@ -94,8 +100,8 @@ export default function Navbar() {
                 <div className={`bg-gray-100 w-full h-1 my-2 ${!menu && "opacity-0"}`} />
               </li>
             ))}
-            <li className='flex flex-col items-center my-2'>
-              <Button path={'/contact'}>
+            <li className='flex flex-col items-center my-2' onClick={() => closeMenu()}>
+              <Button path={'/contact'} >
                 <p className='px-6'>Contact</p>
               </Button>
             </li>
