@@ -25,14 +25,14 @@ export default function Home() {
               <div className='flex flex-row items-center'>
                 <p className={`${styles.text} font-semibold text-dark-green`}> {durum.callToAction}</p>
                 <div className='shrink-0 h-full p-3'>
-                  <Button >
+                  <Button path="/contact">
                     <div className='m-3'>Contact us</div>
                   </Button>
                 </div>
               </div>
 
             </div>
-            <div className='w-[100%] shadow-xl m-3 p-3 sm:p-0'>
+            <div className='w-[100%] shadow-xl m-3 p-3'>
               <img src={durum.image} alt="Australian Durum" className="w-full h-full object-cover shadow-xl" />
             </div>
           </div>
